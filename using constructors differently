@@ -1,0 +1,38 @@
+#include<iostream>
+#include<string>
+using namespace std;
+
+class cnumbers {
+     private:
+            int a;
+            int b;
+     public:
+           
+           cnumbers(void) ;
+           cnumbers(int a,int b);
+               
+         void printnumbers(int x, int y){
+           a=x;
+           b=y;
+           cout<<"the cnumbers are "<<a<<"+"<<b<<"i";} 
+};
+cnumbers::cnumbers(void){
+         a=0;
+         b=0;}
+cnumbers::cnumbers(int x, int y){
+         a=x;
+         b=y;
+         cout<<"\nusing parameterized constructors so the cnumbers are\t"<<a<<"+"<<b<<"i"<<endl;
+             }    
+int main(){
+cnumbers s;
+
+ cout<<"llets print cnumbers with constructors\n";
+      cnumbers();
+      s.printnumbers(20,50);
+      
+      cnumbers(7,9);
+      cnumbers a(70,80);
+      a. printnumbers(60,3000);
+      cnumbers b=cnumbers(10000,2);
+return 0;}
